@@ -1,0 +1,27 @@
+{
+  "name": "xprssng2tsseed",
+  "version": "1.0.0",
+  "description": "A sample NodeJS web application which using Express + Angular2 + Typescript. Development Environment - Visual Studio Code along with Gulp tasks",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rmchndrng/XprssNg2TSSeed.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rmchndrng/XprssNg2TSSeed/issues"
+  },
+  "homepage": "https://github.com/rmchndrng/XprssNg2TSSeed#readme",
+  "dependencies": {
+    "express": "^4.13.4"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sourcemaps": "^2.0.0-alpha",
+    "gulp-typescript": "^2.13.0"
+  }
+}
