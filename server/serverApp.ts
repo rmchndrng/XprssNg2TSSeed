@@ -1,12 +1,18 @@
 import * as express from 'express'
 import * as path from 'path';
 
+import {Student} from './common/models/student'
+
 export class ServerApp {
 
     private _App: express.Express;
 
     constructor() {
         this._App = express();
+        var testStudent = new Student();
+        testStudent.Age = 29;
+        testStudent.Name = "Ram";
+        testStudent.Sex = "M";
     }
 
     public setRoutes() {        

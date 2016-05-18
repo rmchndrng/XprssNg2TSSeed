@@ -30,8 +30,20 @@ gulp.task('build:client:watch', function () {
     )
 });
 
+gulp.task('copy:common', function () {
+    gulp.src('common/**/*.ts')        
+    .pipe(gulp.dest('server/common'))
+    
+    gulp.src('common/**/*.ts')        
+    .pipe(gulp.dest('client/src/common'))
+});
+
+gulp.task('watch-common', function () {
+    gulp.watch('common/**/*.ts', ['copy:common']);
+});
+
 gulp.task('build', function (callback) {   
-    runSequence('watch-server','build:client:watch', callback);
+    runSequence('copy:common','build:server','watch-common','watch-server','build:client:watch', callback);
 });
 
 gulp.task('default', ['build']);

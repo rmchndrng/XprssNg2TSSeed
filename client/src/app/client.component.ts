@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 
+import {Student} from '../common/models/student'
+
 @Component({
   moduleId: module.id,
   selector: 'client-app',
@@ -8,4 +10,10 @@ import { Component } from '@angular/core';
 })
 export class ClientAppComponent {
   title = 'client works!';
+  constructor() {
+    var testStudent = new Student();
+    testStudent.Age = 29;
+    testStudent.Name = "Ram";
+    testStudent.Sex = "M";
+  }
 }

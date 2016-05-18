@@ -6,6 +6,9 @@
         "**/*.js": {
             "when": "$(basename).ts"
         },
-        "**/*.js.map": true
+        "**/*.js.map": true,
+        "client/src/common":true,
+        "server/common":true,
+        "server/client":true
     }
 }
